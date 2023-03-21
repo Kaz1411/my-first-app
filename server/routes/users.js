@@ -34,7 +34,7 @@ router.post("/login", function (req, res) {
         errors: [{ title: "User error", detail: "Incorrect password" }],
       });
     }
-    debugger;
+
     const token = jwt.sign(
       {
         userId: foundUser.id,
